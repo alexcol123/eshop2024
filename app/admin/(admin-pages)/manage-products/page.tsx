@@ -6,17 +6,17 @@ import NullData from '@/app/components/NullData'
 
 const ManageProducts = async () => {
 
-  const products = await getProducts({ category: null })
+  const products = await getProducts({ category: null, searchTerm: null })
   const currentUser = await getCurrentUser()
 
 
-  if(!currentUser || currentUser.role !== "ADMIN"){
+  if (!currentUser || currentUser.role !== "ADMIN") {
     return < NullData title='Opps! Access denied' />
   }
 
   return (
     <div>
-      <ManageProductsClient products= {products} />
+      <ManageProductsClient products={products} />
     </div>
   )
 }

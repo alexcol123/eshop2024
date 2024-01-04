@@ -36,16 +36,18 @@ const BarGraph: React.FC<BarGraphProps> = ({ data }) => {
     ]
   }
 
-  const options = {
-    scales: {
-      y: {
-        baginAtZero: true
-      }
-    }
-  }
+  // const options = {
+  //   scales: {
+  //     y: {
+  //       baginAtZero: true
+  //     }
+  //   }
+  // }
 
   return (
-    <Bar data={chartData} options={options} />
+    <Bar data={chartData} 
+    // options={options}
+     />
   )
 }
 

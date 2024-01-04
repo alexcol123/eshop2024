@@ -45,9 +45,13 @@ const BarGraph: React.FC<BarGraphProps> = ({ data }) => {
   // }
 
   return (
-    <Bar data={chartData} 
+    <Bar data={chartData}
+
+    />
+
+    // <Bar data={chartData}
     // options={options}
-     />
+    // />
   )
 }
 
